@@ -1,0 +1,30 @@
+
+-- Create Table
+
+CREATE TABLE ExchangeRate (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+base VARCHAR(500) NOT NULL,
+type INT(6) NOT NULL,
+date DATE NOT NULL,
+chf DECIMAL(10,5) NOT NULL,
+usd DECIMAL(10,5) NOT NULL,
+eur DECIMAL(10,5) NOT NULL,
+cad DECIMAL(10,5) NOT NULL,
+gbp DECIMAL(10,5) NOT NULL
+);
+
+-- Populate Table with records
+
+INSERT INTO
+ExchangeRate (base, type, date, chf, usd, eur, cad, gbp )
+VALUES
+('eur', 1, '19-12-05', 1.1798,1.1094,1,1.461,,0.8447),
+('chf', 1, '19-12-05', 1,1.01185,0.91207,1.33254,0.77043),
+('usd', 1, '19-12-05', 0.98828,1,0.90138,1.3169280,0.761402),
+('cad', 1, '19-12-05',0.75044,0.75934,0.684462,1,0.57816),
+('gbp', 1, '19-12-05', 1.29797,1.31336,1.18385,1.72960,1);
+('eur', 2, '19-12-05', 1.1498,1.0094,1,1.361,0.7447),
+('chf', 2, '19-12-05', 1,1.001,0.87207,1.22254,0.6043),
+('usd', 2, '19-12-05', 0.78828,1,0.85138,1.22269,0.56602),
+('cad', 2, '19-12-05',0.67044,0.65934,0.34562,1,0.44316),
+('gbp', 2, '19-12-05', 1.19797,1.11336,1.01385,1.55960,1);
